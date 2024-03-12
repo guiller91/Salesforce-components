@@ -1,0 +1,14 @@
+<template>
+    <lightning-input type="search" label="Buscar" onchange={handleSearch} class="slds-m-bottom_medium"></lightning-input>
+    <div class="datatable-container">
+        <lightning-datatable
+            key-field="id"
+            data={filteredData}
+            columns={columns}
+            sorted-by={sortedBy}
+            sorted-direction={sortDirection}
+            onsort={updateSort}
+            max-row-selection="1">
+        </lightning-datatable>
+    </div>
+</template>
