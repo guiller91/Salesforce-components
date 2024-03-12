@@ -31,9 +31,9 @@ Las columnas se definen mediante un array de objetos, donde cada objeto especifi
 
 ```javascript
 const columns = [
-    { label: 'ID', fieldName: 'id', type: 'text' },
-    { label: 'Name', fieldName: 'name', type: 'text' },
-    { label: 'Email', fieldName: 'email', type: 'email' }
+   { label: 'Name', fieldName: 'Name', type: 'text', sortable: true },
+   { label: 'Quantity', fieldName: 'Quantity__c', type: 'number', sortable: true },
+   { label: 'Utilization', fieldName: 'Utilization__c', type: 'percent', sortable: true }
 ];
 
 ```
