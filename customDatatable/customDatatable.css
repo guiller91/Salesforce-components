@@ -1,0 +1,23 @@
+/* Estilos para el contenedor de la datatable */
+.slds-table {
+    --lwc-borderWidth: 1px; /* Borde de la tabla */
+    --lwc-borderColor: #d1d1d1; /* Color del borde */
+    --lwc-borderRadius: 0.25rem; /* Redondeo de las esquinas */
+}
+
+/* Estilos para el contenedor de la datatable para manejar el overflow */
+.datatable-container {
+    max-height: 500px; /* Altura máxima antes de mostrar el scroll */
+    overflow-y: auto; /* Muestra el scroll vertical cuando se excede la altura máxima */
+    border: var(--lwc-borderWidth) solid var(--lwc-borderColor);
+    border-radius: var(--lwc-borderRadius);
+}
+
+/* Mejoras visuales para la cabecera y las celdas de la tabla */
+.lightning-datatable thead {
+    background-color: #f4f6f9; /* Color de fondo para la cabecera */
+}
+
+.lightning-datatable tbody tr:hover {
+    background-color: #f0f0f0; /* Color de fondo para las filas al pasar el mouse */
+}
