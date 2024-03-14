@@ -20,7 +20,7 @@ Este componente utiliza la API de Google Cloud Natural Language para analizar el
 
 ### Implementación
 
-Revisa la carpeta `sentimentAnalysisLWC` para obtener los detalles de implementación y configuración.
+Revisa la carpeta `Natural language` para obtener los detalles de implementación y configuración.
 
 ## Custom Datatable LWC
 
@@ -34,7 +34,7 @@ Este componente Lightning Web Component ofrece una datatable personalizable que 
 
 ### Implementación
 
-Para detalles sobre cómo implementar y utilizar este componente, por favor, consulta la carpeta `customDatatableLWC`.
+Para detalles sobre cómo implementar y utilizar este componente, por favor, consulta la carpeta `customDatatable`.
 
 ## Contribuciones
 
