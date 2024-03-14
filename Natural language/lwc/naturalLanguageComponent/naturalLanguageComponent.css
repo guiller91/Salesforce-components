@@ -1,0 +1,19 @@
+.positive {
+    color: green;
+}
+
+.lightly-positive {
+    color: #90ee90; /* O un verde claro específico que prefieras */
+}
+
+.neutral {
+    color: yellow;
+}
+
+.lightly-negative {
+    color: orange;
+}
+
+.negative {
+    color: red;
+}

@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="Análisis de Sentimiento" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <lightning-textarea name="inputText" label="Ingrese texto para análisis de sentimiento"
+                                value={inputText} onchange={handleInputChange}>
+            </lightning-textarea>
+            <div class="slds-p-top_small">
+                <lightning-button label="Analizar Sentimiento" variant="brand"
+                                  onclick={handleAnalyzeSentiment}>
+                </lightning-button>
+
+            </div>
+        </div>
+        <template if:true={sentimentResult}>
+            <div class="slds-m-around_medium">
+                <div class="slds-grid slds-grid_align-spread">
+                    <span>0.0</span>
+                    <span>1.0</span>
+                </div>
+                <div class="slds-progress-bar slds-progress-bar_circular" aria-valuemin="0" aria-valuemax="100" aria-valuenow={normalizedScore} role="progressbar">
+                    <span class="slds-progress-bar__value" style={progressBarStyle}>
+                        <span class={scoreVariant}></span>
+                    </span>
+                </div>
+                <p class="slds-text-heading_small slds-m-top_medium">
+                    Score de Sentimiento: {sentimentScore} <br/>
+                    Magnitud de Sentimiento: {sentimentMagnitude}
+                </p>
+            </div>
+        </template>
+    </lightning-card>
+</template>
